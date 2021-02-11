@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.logger = void 0;
+const logger = (logger) => ({
+    debug: (string) => () => logger.debug(string),
+    info: (string) => () => logger.info(string),
+    error: (string) => () => logger.error(string),
+    trace: (string) => () => logger.trace(string),
+});
+exports.logger = logger;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibG9nZ2VyLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vLi4vLi4vc3JjL21vZHVsZXMvY29tbW9uL2xvZ2dlci9sb2dnZXIudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBRU8sTUFBTSxNQUFNLEdBQUcsQ0FBQyxNQUFjLEVBQUUsRUFBRSxDQUFDLENBQUM7SUFDdkMsS0FBSyxFQUFFLENBQUMsTUFBYyxFQUFFLEVBQUUsQ0FBQyxHQUFHLEVBQUUsQ0FBQyxNQUFNLENBQUMsS0FBSyxDQUFDLE1BQU0sQ0FBQztJQUNyRCxJQUFJLEVBQUUsQ0FBQyxNQUFjLEVBQUUsRUFBRSxDQUFDLEdBQUcsRUFBRSxDQUFDLE1BQU0sQ0FBQyxJQUFJLENBQUMsTUFBTSxDQUFDO0lBQ25ELEtBQUssRUFBRSxDQUFDLE1BQWMsRUFBRSxFQUFFLENBQUMsR0FBRyxFQUFFLENBQUMsTUFBTSxDQUFDLEtBQUssQ0FBQyxNQUFNLENBQUM7SUFDckQsS0FBSyxFQUFFLENBQUMsTUFBYyxFQUFFLEVBQUUsQ0FBQyxHQUFHLEVBQUUsQ0FBQyxNQUFNLENBQUMsS0FBSyxDQUFDLE1BQU0sQ0FBQztDQUN4RCxDQUFDLENBQUM7QUFMVSxRQUFBLE1BQU0sVUFLaEIifQ==

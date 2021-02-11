@@ -1,0 +1,1489 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7b33dbe2-04e6-4cd2-b5c0-dc686f8e3f44" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.circleci/config.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/apollo13-odstavky-saver.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.prettierignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.prettierrc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/__tests__/errors.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/__tests__/utilts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/database/account.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/database/blog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/database/group.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/database/post.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/database/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/database/withs/withErrors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/database/withs/withGroupAlliances.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/database/withs/withGroups.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/database/withs/withSystem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/database/withs/withSystemDates.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/graphql/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/modules/account/core/accountService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/modules/account/core/accountValidations.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/modules/account/shell/account.graphql.resolvers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/modules/account/shell/account.rest.resolvers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/modules/account/shell/accountResolversTypes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/modules/account/shell/accountRouter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/modules/account/types/accountCommonTypes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/modules/account/types/accountValidationsTypes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/modules/api.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/modules/api/common.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/modules/api/routes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/modules/api/types.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/modules/blog/core/blogService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/modules/blog/core/blogValidations.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/modules/blog/shell/blog.graphql.resolvers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/modules/blog/shell/blog.rest.resolvers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/modules/common/dateUtils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/modules/common/fpUtils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/modules/common/functionUtils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/modules/common/logger/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/modules/common/logger/logger.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/modules/common/logger/loggerConfig.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/modules/common/mongooseUtils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/modules/common/resultHandlers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/modules/common/withs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/modules/errors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/modules/fakeAccountContext/fakeAccountContext.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/modules/group/core/groupService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/modules/group/core/groupTypes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/modules/group/core/groupValidations.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/modules/group/shell/group.graphql.resolvers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/modules/issue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/modules/mongo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/modules/mongoExternal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/modules/mongoInternal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/modules/parser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/modules/post/core/postService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/modules/post/core/postValidations.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/modules/post/shell/post.graphql.resolvers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/modules/state.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/modules/test/core/testService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/modules/test/mongInternal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/modules/test/shell/test.graphql.resolvers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/modules/types/common.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/modules/types/issue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/modules/xlsx.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/routes/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/routes/message.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/server/Server.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/server/connection.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/server/createApolloServer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/server/database.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/server/socketCore.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/test/test.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/fragmentTypes.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nodemon.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/__tests__/errors.test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/__tests__/utilts.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/api.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/api/common.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/api/routes.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/common/logger/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/common/logger/logger.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/common/logger/loggerConfig.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/errors.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/issue/issue.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/issue/model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/mongo.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/mongoExternal.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/mongoInternal.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/parser.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/server/Server.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tslint.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../nextclient/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../nextclient/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../nextclient/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../nextclient/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../nextclient/src/components/Dashboard/components/ApolloTest.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../nextclient/src/components/Dashboard/components/DashboardCopy.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../nextclient/src/components/Dashboard/components/hooks/useFigure.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../nextclient/src/components/Dashboard/components/hooks/useTarget.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../nextclient/src/components/Dashboard/components/hooks/useTarget.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../nextclient/src/components/Dashboard/components/types/GUITypes.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../nextclient/src/pages/api/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../nextclient/src/pages/api/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../nextclient/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/../nextclient/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../nextclient/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../nextclient/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stgTypes/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../stgTypes/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <list id="7ae2f557-8a8e-4ed4-b67e-d61d24f4b6c5" name="rozpracovano" comment="rozpracovano">
+      <changelist_data name="Ondraba" email="ratpile@gmail.com" date="1575989908000">
+        <option name="date" value="1575989908000" />
+        <option name="email" value="ratpile@gmail.com" />
+        <option name="name" value="Ondraba" />
+      </changelist_data>
+    </list>
+    <ignored path="$PROJECT_DIR$/node_modules/" />
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1777669285">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.21" value="2" />
+          <entry key="project.open.time.29" value="1" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.6" value="2" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="8" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.js.language.service.starts">
+        <counts>
+          <entry key="PrettierLanguageServiceImpl" value="6" />
+          <entry key="TypeScriptServerServiceImpl" value="8" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="env" value="1" />
+          <entry key="gitignore" value="1" />
+          <entry key="json" value="2" />
+          <entry key="prettierignore" value="1" />
+          <entry key="ts" value="66" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key=".env file" value="1" />
+          <entry key="JSON" value="2" />
+          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="TypeScript" value="66" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="env" value="33" />
+          <entry key="gitignore" value="8" />
+          <entry key="ts" value="4149" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key=".env file" value="33" />
+          <entry key="PLAIN_TEXT" value="8" />
+          <entry key="TypeScript" value="4149" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/modules/issue/issue.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="25" column="6" lean-forward="true" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
+              <folding>
+                <element signature="e#0#36#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/modules/issue/model.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="366">
+              <caret line="96" column="61" selection-start-line="96" selection-start-column="61" selection-end-line="96" selection-end-column="61" />
+              <folding>
+                <element signature="e#0#27#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nodemon.json">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/hyper-ts/lib/index.d.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="5130">
+              <caret line="352" column="24" selection-start-line="352" selection-start-column="24" selection-end-line="352" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/@types/mongodb/index.d.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="1500" column="4" selection-start-line="1500" selection-start-column="4" selection-end-line="1500" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/modules/errors.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1035">
+              <caret line="69" column="13" selection-start-line="69" selection-start-column="13" selection-end-line="69" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/modules/mongoExternal.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="32" column="36" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
+              <folding>
+                <element signature="e#0#60#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/modules/api/routes.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="320">
+              <caret line="23" column="33" lean-forward="true" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/modules/mongo.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" selection-start-line="5" selection-end-line="10" selection-end-column="2" />
+              <folding>
+                <element signature="e#0#49#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/modules/api/common.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+              <folding>
+                <element signature="e#0#36#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>generateAuthenticationPayload</find>
+      <find>DeactivateAccountsInput</find>
+      <find>codegen</find>
+      <find>ActivateAccountsInput</find>
+      <find>Account</find>
+      <find>verify</find>
+      <find>unio</find>
+      <find>unin</find>
+      <find>iso</find>
+      <find>stat</find>
+      <find>newUrl</find>
+      <find>new</find>
+      <find>templ</find>
+      <find>template</find>
+      <find>ts</find>
+      <find>mongo</find>
+      <find>t.uni</find>
+      <find>.wrap</find>
+      <find>databaseUri</find>
+      <find>fromEither</find>
+      <find>enum</find>
+      <find>createDatabaseError</find>
+      <find>looku</find>
+      <find>internalMongoUri</find>
+      <find>TE.tr</find>
+      <find>.unw</find>
+      <find>unwrap</find>
+      <find>objectIdstring</find>
+      <find>WithId</find>
+      <find>wrap</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>CondInterface</replace>
+      <replace>requestCache: RequstCacheHashMap</replace>
+      <replace>conn</replace>
+      <replace>user</replace>
+      <replace>either</replace>
+      <replace>Ma</replace>
+      <replace>Flow</replace>
+      <replace>identityObj</replace>
+      <replace>io</replace>
+      <replace>IIo</replace>
+      <replace>_fish</replace>
+      <replace>IRailway</replace>
+      <replace>railway</replace>
+      <replace>nok</replace>
+      <replace>lib</replace>
+      <replace>throwMessage</replace>
+      <replace>issue</replace>
+      <replace>Issue</replace>
+      <replace>TE</replace>
+      <replace>league</replace>
+      <replace>content</replace>
+      <replace>Blog</replace>
+      <replace>blog</replace>
+      <replace>createBlog</replace>
+      <replace>post</replace>
+      <replace>Post</replace>
+      <replace>TE.TaskEither</replace>
+      <replace>TE.TryCatch</replace>
+      <replace>Game</replace>
+      <replace>createBackendError</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="rebranch" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/modules/account/types/accountServiceTypes.ts" />
+        <option value="$PROJECT_DIR$/src/modules/post/core/postService.ts" />
+        <option value="$PROJECT_DIR$/src/modules/account/types/accountCommonTypes.ts" />
+        <option value="$PROJECT_DIR$/src/modules/account/shell/account.rest.resolvers.ts" />
+        <option value="$PROJECT_DIR$/src/modules/common/fpUtils.ts" />
+        <option value="$PROJECT_DIR$/src/routes/message.ts" />
+        <option value="$PROJECT_DIR$/tslint.json" />
+        <option value="$PROJECT_DIR$/src/server/Servers.ts" />
+        <option value="$PROJECT_DIR$/src/server/socketCore.ts" />
+        <option value="$PROJECT_DIR$/src/test/test.test.ts" />
+        <option value="$PROJECT_DIR$/src/modules/account/core/accountValidations.ts" />
+        <option value="$PROJECT_DIR$/src/modules/account/shell/account.graphql.resolvers.ts" />
+        <option value="$PROJECT_DIR$/src/modules/group/core/groupService.ts" />
+        <option value="$PROJECT_DIR$/src/modules/group/core/groupTypes.ts" />
+        <option value="$PROJECT_DIR$/src/modules/group/core/groupValidations.ts" />
+        <option value="$PROJECT_DIR$/src/modules/group/shell/group.graphql.resolvers.ts" />
+        <option value="$PROJECT_DIR$/src/modules/common/mongooseUtils.ts" />
+        <option value="$PROJECT_DIR$/src/modules/common/resultHandlers.ts" />
+        <option value="$PROJECT_DIR$/schema/game/index.graphql" />
+        <option value="$PROJECT_DIR$/src/modules/account/core/accountService.ts" />
+        <option value="$PROJECT_DIR$/schema/game/game.query.graphql" />
+        <option value="$PROJECT_DIR$/src/database/post.ts" />
+        <option value="$PROJECT_DIR$/src/modules/test/core/accountService.ts" />
+        <option value="$PROJECT_DIR$/src/modules/test/shell/account.graphql.resolvers.ts" />
+        <option value="$PROJECT_DIR$/src/modules/test/shell/test.graphql.resolvers.ts" />
+        <option value="$PROJECT_DIR$/src/graphql/index.ts" />
+        <option value="$PROJECT_DIR$/src/modules/test/core/testService.ts" />
+        <option value="$PROJECT_DIR$/src/__tests__/errorTest.ts" />
+        <option value="$PROJECT_DIR$/src/__tests__/utilts.ts" />
+        <option value="$PROJECT_DIR$/src/__tests__/errors.test.ts" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/server/connection.ts" />
+        <option value="$PROJECT_DIR$/dist/server/database.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/src/modules/api.ts" />
+        <option value="$PROJECT_DIR$/src/modules/parser.ts" />
+        <option value="$PROJECT_DIR$/src/modules/types/common.ts" />
+        <option value="$PROJECT_DIR$/src/modules/errors.ts" />
+        <option value="$PROJECT_DIR$/src/modules/mongoInternal.ts" />
+        <option value="$PROJECT_DIR$/src/modules/mongoExternal.ts" />
+        <option value="$PROJECT_DIR$/src/index.ts" />
+        <option value="$PROJECT_DIR$/src/server/Server.ts" />
+        <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/modules/mongo.ts" />
+        <option value="$PROJECT_DIR$/src/modules/api/common.ts" />
+        <option value="$PROJECT_DIR$/src/modules/issue.ts" />
+        <option value="$PROJECT_DIR$/src/modules/issue/types.ts" />
+        <option value="$PROJECT_DIR$/src/modules/issue/issue.ts" />
+        <option value="$PROJECT_DIR$/src/modules/api/routes.ts" />
+        <option value="$PROJECT_DIR$/src/modules/issue/model.ts" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-7" />
+    <option name="y" value="2" />
+    <option name="width" value="1932" />
+    <option name="height" value="1045" />
+  </component>
+  <component name="ProjectId" id="1o6Z9PYY3j9st2MDiTCwqG6R0r3" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="stgBackend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stgBackend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stgBackend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stgBackend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stgBackend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stgBackend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stgBackend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stgBackend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stgBackend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stgBackend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stgBackend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stgBackend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="issue" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/obanb/Desktop/up-graphql-origin/up-backend/src/modules/account/core/accountService.ts&#10;resolvers&#9;FILE&#9;file://C:/Users/obanb/Desktop/up-graphql-origin/up-backend/src/modules/account/shell/account.graphql.resolvers.ts&#10;shell&#9;FILE&#9;file://C:/Users/obanb/Desktop/up-graphql-origin/up-backend/dist/modules/account/shell&#10;Acco&#9;FILE&#9;file://C:/Users/obanb/Desktop/up-graphql-origin/up-backend/src/modules/account/core/accountService.ts&#10;Types&#9;FILE&#9;file://C:/Users/obanb/Desktop/up-graphql-origin/up-backend/src/modules/account/types/accountCommonTypes.ts&#10;Rout&#9;FILE&#9;file://C:/Users/obanb/Desktop/up-graphql-origin/up-backend/src/modules/account/shell/accountRouter.ts&#10;server.t&#9;FILE&#9;file://C:/Users/obanb/Desktop/up-graphql-origin/up-backend/src/server/Server.ts" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="full.screen.before.presentation.mode" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.tslint" value="C:\Users\obanb\Desktop\apollo13-odstavky-saver\node_modules\tslint" />
+    <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/jest" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\obanb\Desktop\apollo13-odstavky-saver\node_modules\prettier" />
+    <property name="settings.editor.selected.configurable" value="settings.typescriptcompiler" />
+    <property name="ts.external.directory.path" value="C:\Users\obanb\Desktop\up-graphql-origin\stg\packages\stgBackend\node_modules\typescript\lib" />
+    <property name="typescript-compiler-editor-notification" value="false" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\obanb\Desktop\up-graphql-origin\stg\packages\stgBackend\src\modules\issue" />
+      <recent name="C:\Users\ondra\Desktop\testigo\testigo\src\modules\types" />
+      <recent name="C:\Users\obanb\Desktop\up-graphql-origin\stgBackend\src\modules" />
+      <recent name="C:\Users\obanb\Desktop\up-graphql-origin\up-backend\src\utils\fisherman\imp" />
+      <recent name="C:\Users\obanb\Desktop\apollo13-odstavky-saver\src\download\service" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\obanb\Desktop\up-graphql-origin\up-backend\schema\game" />
+      <recent name="C:\Users\obanb\Desktop\up-graphql-origin\up-backend" />
+      <recent name="C:\Users\obanb\Desktop\up-graphql-origin\up-backend\src" />
+      <recent name="C:\Users\obanb\Desktop\up-graphql-origin\up-backend\src\modules" />
+      <recent name="C:\Users\obanb\Desktop\up-graphql-origin\up-backend\src\database" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Attach to Node.js/Chrome.debug">
+    <configuration name="debug" type="ChromiumRemoteDebugType" factoryName="Chromium Remote" port="9229">
+      <method v="2" />
+    </configuration>
+    <configuration name="Test of retry util" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/__tests__/errorTest.ts" />
+      <test-names>
+        <test-name value="Test of retry util" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Test of retry util.should test ERROR coreError union error json structure" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/__tests__/errorTest.ts" />
+      <test-names>
+        <test-name value="Test of retry util" />
+        <test-name value="should test ERROR coreError union error json structure" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Test of retry util.should test coreError union error json structure" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/__tests__/errorTest.ts" />
+      <test-names>
+        <test-name value="Test of retry util" />
+        <test-name value="should test coreError union error json structure" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Test of retry util.should test database error wrong json structure" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/__tests__/errorTest.ts" />
+      <test-names>
+        <test-name value="Test of retry util" />
+        <test-name value="should test database error wrong json structure" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Test of retry util.should test ok database error json structure" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/__tests__/errorTest.ts" />
+      <test-names>
+        <test-name value="Test of retry util" />
+        <test-name value="should test ok database error json structure" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Unnamed" type="js.build_tools.npm" factoryName="npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <package-json value="dev" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="dev" type="js.build_tools.npm" factoryName="npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Attach to Node.js/Chrome.debug" />
+      <item itemvalue="npm.dev" />
+      <item itemvalue="npm.Unnamed" />
+      <item itemvalue="Jest.Test of retry util" />
+      <item itemvalue="Jest.Test of retry util.should test ok database error json structure" />
+      <item itemvalue="Jest.Test of retry util.should test database error wrong json structure" />
+      <item itemvalue="Jest.Test of retry util.should test coreError union error json structure" />
+      <item itemvalue="Jest.Test of retry util.should test ERROR coreError union error json structure" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Jest.Test of retry util.should test ERROR coreError union error json structure" />
+        <item itemvalue="Jest.Test of retry util.should test coreError union error json structure" />
+        <item itemvalue="Jest.Test of retry util.should test database error wrong json structure" />
+        <item itemvalue="Jest.Test of retry util.should test ok database error json structure" />
+        <item itemvalue="Jest.Test of retry util" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" BundledDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7b33dbe2-04e6-4cd2-b5c0-dc686f8e3f44" name="Default Changelist" comment="" />
+      <created>1547542667105</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1547542667105</updated>
+      <workItem from="1547542668820" duration="120000" />
+      <workItem from="1547542822036" duration="2623000" />
+      <workItem from="1547547205778" duration="3836000" />
+      <workItem from="1547551336777" duration="20563000" />
+      <workItem from="1547634291010" duration="10624000" />
+      <workItem from="1547649426307" duration="17633000" />
+      <workItem from="1547799480250" duration="90927000" />
+      <workItem from="1548251295941" duration="26851000" />
+      <workItem from="1548347672831" duration="11538000" />
+      <workItem from="1548438139751" duration="25399000" />
+      <workItem from="1549876832554" duration="7763000" />
+      <workItem from="1549958891136" duration="599000" />
+      <workItem from="1549961744565" duration="10125000" />
+      <workItem from="1550129410954" duration="6027000" />
+      <workItem from="1550482516303" duration="89656000" />
+      <workItem from="1551173171886" duration="95000" />
+      <workItem from="1551174099284" duration="21143000" />
+      <workItem from="1551774344754" duration="9892000" />
+      <workItem from="1551789782684" duration="9054000" />
+      <workItem from="1552648045885" duration="937000" />
+      <workItem from="1552897997331" duration="598000" />
+      <workItem from="1553075815180" duration="5424000" />
+      <workItem from="1553598489158" duration="2171000" />
+      <workItem from="1554212527295" duration="1353000" />
+      <workItem from="1554452213017" duration="599000" />
+      <workItem from="1554486817223" duration="984000" />
+      <workItem from="1554722742508" duration="42518000" />
+      <workItem from="1554896943951" duration="2894000" />
+      <workItem from="1554930325311" duration="2486000" />
+      <workItem from="1555399621270" duration="1197000" />
+      <workItem from="1556182297431" duration="2910000" />
+      <workItem from="1556269463393" duration="4246000" />
+      <workItem from="1556524237184" duration="2489000" />
+      <workItem from="1556631235285" duration="6066000" />
+      <workItem from="1557744784409" duration="3445000" />
+      <workItem from="1558957651314" duration="1365000" />
+      <workItem from="1559053308702" duration="595000" />
+      <workItem from="1559142443327" duration="1221000" />
+      <workItem from="1559143822170" duration="1405000" />
+      <workItem from="1559297128943" duration="1397000" />
+      <workItem from="1559298962245" duration="599000" />
+      <workItem from="1560757967160" duration="594000" />
+      <workItem from="1560848409116" duration="591000" />
+      <workItem from="1560943676344" duration="528000" />
+      <workItem from="1561561329094" duration="949000" />
+      <workItem from="1562057724275" duration="1817000" />
+      <workItem from="1562081003017" duration="637000" />
+      <workItem from="1562445647158" duration="24000" />
+      <workItem from="1562924991173" duration="20703000" />
+      <workItem from="1563175542816" duration="23760000" />
+      <workItem from="1563207341500" duration="10642000" />
+      <workItem from="1563275464080" duration="6725000" />
+      <workItem from="1563378226267" duration="5608000" />
+      <workItem from="1563460182410" duration="3107000" />
+      <workItem from="1563545530284" duration="2185000" />
+      <workItem from="1563799695670" duration="1496000" />
+      <workItem from="1563952477413" duration="1194000" />
+      <workItem from="1564143491372" duration="5979000" />
+      <workItem from="1564649759509" duration="1197000" />
+      <workItem from="1564676498469" duration="1239000" />
+      <workItem from="1564761123649" duration="221000" />
+      <workItem from="1564761496537" duration="160000" />
+      <workItem from="1564761817401" duration="1763000" />
+      <workItem from="1565005865407" duration="15779000" />
+      <workItem from="1565106163906" duration="2421000" />
+      <workItem from="1565680371304" duration="889000" />
+      <workItem from="1565957713908" duration="1234000" />
+      <workItem from="1566201418342" duration="9522000" />
+      <workItem from="1567777160510" duration="127000" />
+      <workItem from="1567777299309" duration="2463000" />
+      <workItem from="1567780325300" duration="15620000" />
+      <workItem from="1568100604739" duration="589000" />
+      <workItem from="1568234152472" duration="311000" />
+      <workItem from="1568274729902" duration="983000" />
+      <workItem from="1568277749636" duration="599000" />
+      <workItem from="1568718962244" duration="1952000" />
+      <workItem from="1568795513151" duration="4675000" />
+      <workItem from="1569247856461" duration="2172000" />
+      <workItem from="1569396421170" duration="4742000" />
+      <workItem from="1569828449695" duration="599000" />
+      <workItem from="1569842102052" duration="596000" />
+      <workItem from="1570014270237" duration="3270000" />
+      <workItem from="1570174364211" duration="598000" />
+      <workItem from="1570192448193" duration="598000" />
+      <workItem from="1570193437072" duration="595000" />
+      <workItem from="1570454334425" duration="15165000" />
+      <workItem from="1570635011878" duration="324000" />
+      <workItem from="1570696280067" duration="6231000" />
+      <workItem from="1570785838811" duration="13510000" />
+      <workItem from="1571399106915" duration="628000" />
+      <workItem from="1571408374512" duration="44493000" />
+      <workItem from="1571922101744" duration="3537000" />
+      <workItem from="1571992945879" duration="38921000" />
+      <workItem from="1572556311349" duration="18716000" />
+      <workItem from="1572942453751" duration="12383000" />
+      <workItem from="1573114602950" duration="4537000" />
+      <workItem from="1573202129614" duration="1798000" />
+      <workItem from="1573337977179" duration="16302000" />
+      <workItem from="1573548071573" duration="12322000" />
+      <workItem from="1574070280562" duration="13036000" />
+      <workItem from="1574184688793" duration="146000" />
+      <workItem from="1574242260816" duration="2205000" />
+      <workItem from="1574428788858" duration="10233000" />
+      <workItem from="1574671580797" duration="7368000" />
+      <workItem from="1574756593040" duration="74773000" />
+      <workItem from="1575318051643" duration="11300000" />
+      <workItem from="1575447603626" duration="9251000" />
+      <workItem from="1575625279514" duration="1333000" />
+      <workItem from="1575637922833" duration="7499000" />
+      <workItem from="1575880396864" duration="16417000" />
+      <workItem from="1575967108011" duration="10940000" />
+      <workItem from="1575988888242" duration="3505000" />
+      <workItem from="1576053681093" duration="7994000" />
+      <workItem from="1576142520541" duration="4090000" />
+      <workItem from="1576226171237" duration="13092000" />
+      <workItem from="1576486303079" duration="1705000" />
+      <workItem from="1576503382946" duration="593000" />
+      <workItem from="1576526783656" duration="10665000" />
+      <workItem from="1576661112654" duration="636000" />
+      <workItem from="1576662977174" duration="21867000" />
+      <workItem from="1577107743907" duration="2449000" />
+      <workItem from="1577964210636" duration="13037000" />
+      <workItem from="1578245157103" duration="21929000" />
+      <workItem from="1578480132142" duration="7222000" />
+      <workItem from="1578559431923" duration="1313000" />
+      <workItem from="1578906758550" duration="598000" />
+      <workItem from="1578992289352" duration="596000" />
+      <workItem from="1579102672778" duration="599000" />
+      <workItem from="1579250906238" duration="594000" />
+      <workItem from="1579596861700" duration="1289000" />
+      <workItem from="1579685398939" duration="896000" />
+      <workItem from="1579702156974" duration="4450000" />
+      <workItem from="1579777401149" duration="2892000" />
+      <workItem from="1580115521014" duration="596000" />
+      <workItem from="1581426873725" duration="1804000" />
+      <workItem from="1581497611215" duration="597000" />
+      <workItem from="1581931853726" duration="5078000" />
+      <workItem from="1582043637111" duration="10283000" />
+      <workItem from="1582282245165" duration="3213000" />
+      <workItem from="1582296573908" duration="5371000" />
+      <workItem from="1582555763077" duration="3981000" />
+      <workItem from="1582621038610" duration="18611000" />
+      <workItem from="1582728393640" duration="4092000" />
+      <workItem from="1582898009730" duration="587000" />
+      <workItem from="1582899735085" duration="17723000" />
+      <workItem from="1583225749184" duration="4466000" />
+      <workItem from="1583398004700" duration="7083000" />
+      <workItem from="1583511398309" duration="1260000" />
+      <workItem from="1583579723799" duration="14100000" />
+      <workItem from="1583766933460" duration="18550000" />
+      <workItem from="1583861558212" duration="388000" />
+      <workItem from="1583917081368" duration="3250000" />
+      <workItem from="1584005443366" duration="3576000" />
+      <workItem from="1584090013050" duration="592000" />
+      <workItem from="1584348856618" duration="18029000" />
+      <workItem from="1584530950550" duration="546000" />
+      <workItem from="1584534866450" duration="3906000" />
+      <workItem from="1584617224101" duration="5101000" />
+      <workItem from="1584965943376" duration="556000" />
+      <workItem from="1585141131916" duration="564000" />
+      <workItem from="1585210818394" duration="555000" />
+      <workItem from="1585307489808" duration="599000" />
+      <workItem from="1585493520856" duration="2872000" />
+      <workItem from="1585650566948" duration="598000" />
+      <workItem from="1585687087878" duration="1191000" />
+      <workItem from="1585826714679" duration="596000" />
+      <workItem from="1585901471433" duration="1897000" />
+      <workItem from="1586247186358" duration="599000" />
+      <workItem from="1586262666630" duration="597000" />
+      <workItem from="1586336256673" duration="605000" />
+      <workItem from="1586417974982" duration="597000" />
+      <workItem from="1586423777466" duration="599000" />
+      <workItem from="1586852827281" duration="4576000" />
+      <workItem from="1586941232267" duration="594000" />
+      <workItem from="1587023070793" duration="598000" />
+      <workItem from="1587111150472" duration="1496000" />
+      <workItem from="1587124266399" duration="599000" />
+      <workItem from="1587368882368" duration="1198000" />
+      <workItem from="1587455328797" duration="595000" />
+      <workItem from="1587541613066" duration="598000" />
+      <workItem from="1587565694707" duration="611000" />
+      <workItem from="1587632577315" duration="599000" />
+      <workItem from="1587718409616" duration="598000" />
+      <workItem from="1587724636908" duration="596000" />
+      <workItem from="1587890601313" duration="598000" />
+      <workItem from="1587985625577" duration="598000" />
+      <workItem from="1588057849760" duration="599000" />
+      <workItem from="1588075380778" duration="540000" />
+      <workItem from="1588146658755" duration="4215000" />
+      <workItem from="1588771500842" duration="5739000" />
+      <workItem from="1589184962664" duration="12964000" />
+      <workItem from="1589271085668" duration="7541000" />
+      <workItem from="1589791874474" duration="1385000" />
+      <workItem from="1589964021777" duration="4134000" />
+      <workItem from="1590404979764" duration="7496000" />
+      <workItem from="1590412491012" duration="16196000" />
+      <workItem from="1590570814678" duration="5400000" />
+      <workItem from="1591086864221" duration="598000" />
+      <workItem from="1591087886816" duration="599000" />
+      <workItem from="1591259046366" duration="3339000" />
+      <workItem from="1591606057256" duration="1270000" />
+      <workItem from="1591861689779" duration="596000" />
+      <workItem from="1592209304486" duration="595000" />
+      <workItem from="1592220070779" duration="4246000" />
+      <workItem from="1592567235774" duration="4719000" />
+      <workItem from="1592916478055" duration="4568000" />
+      <workItem from="1593002530497" duration="599000" />
+      <workItem from="1593085557816" duration="1846000" />
+      <workItem from="1593505311050" duration="5443000" />
+      <workItem from="1593689109628" duration="599000" />
+      <workItem from="1593790445712" duration="599000" />
+      <workItem from="1594118666351" duration="4644000" />
+      <workItem from="1594212821859" duration="5847000" />
+      <workItem from="1594279653772" duration="1297000" />
+      <workItem from="1594389377336" duration="2505000" />
+      <workItem from="1594626580102" duration="19596000" />
+      <workItem from="1594885667457" duration="3652000" />
+      <workItem from="1594971280102" duration="596000" />
+      <workItem from="1595334686132" duration="6088000" />
+      <workItem from="1595938226985" duration="4141000" />
+      <workItem from="1596010896215" duration="572000" />
+      <workItem from="1596099731340" duration="598000" />
+      <workItem from="1596181409721" duration="599000" />
+      <workItem from="1596528774311" duration="598000" />
+      <workItem from="1596612604670" duration="599000" />
+      <workItem from="1596702232080" duration="665000" />
+      <workItem from="1596713032393" duration="4413000" />
+      <workItem from="1597071688890" duration="563000" />
+      <workItem from="1597141532254" duration="619000" />
+      <workItem from="1597218525444" duration="599000" />
+      <workItem from="1597304691822" duration="4000" />
+      <workItem from="1598008828263" duration="599000" />
+      <workItem from="1598189866229" duration="282000" />
+      <workItem from="1598256941344" duration="599000" />
+      <workItem from="1598263423719" duration="598000" />
+      <workItem from="1598264605304" duration="599000" />
+      <workItem from="1602156509145" duration="5481000" />
+      <workItem from="1602584444000" duration="6000" />
+      <workItem from="1603112759871" duration="604000" />
+      <workItem from="1603113755568" duration="102000" />
+      <workItem from="1603114190665" duration="1144000" />
+      <workItem from="1603118244427" duration="1705000" />
+      <workItem from="1603181512032" duration="598000" />
+      <workItem from="1603267197746" duration="599000" />
+      <workItem from="1603455178966" duration="700000" />
+      <workItem from="1603706865030" duration="2176000" />
+      <workItem from="1603714218020" duration="642000" />
+      <workItem from="1603984880050" duration="733000" />
+      <workItem from="1604051920354" duration="594000" />
+      <workItem from="1604069274606" duration="556000" />
+      <workItem from="1604306221060" duration="549000" />
+      <workItem from="1604393272924" duration="599000" />
+      <workItem from="1604410041696" duration="806000" />
+      <workItem from="1604479827948" duration="231000" />
+      <workItem from="1604483930197" duration="599000" />
+      <workItem from="1604506028800" duration="599000" />
+      <workItem from="1604567809094" duration="551000" />
+      <workItem from="1604586891515" duration="1009000" />
+      <workItem from="1604652186116" duration="599000" />
+      <workItem from="1604668443287" duration="599000" />
+      <workItem from="1604862168599" duration="2000" />
+      <workItem from="1607084668435" duration="8014000" />
+      <workItem from="1607331607082" duration="599000" />
+      <workItem from="1607346698694" duration="2447000" />
+      <workItem from="1607355486392" duration="598000" />
+      <workItem from="1607417443495" duration="599000" />
+      <workItem from="1607422491257" duration="599000" />
+      <workItem from="1607426024475" duration="598000" />
+      <workItem from="1607427124724" duration="598000" />
+      <workItem from="1608040093014" duration="2378000" />
+      <workItem from="1608110432288" duration="1871000" />
+      <workItem from="1608196295792" duration="601000" />
+      <workItem from="1608291439238" duration="5111000" />
+      <workItem from="1608538818632" duration="2454000" />
+      <workItem from="1608563191530" duration="8000" />
+      <workItem from="1608661555695" duration="893000" />
+      <workItem from="1608719731825" duration="8914000" />
+      <workItem from="1609147083603" duration="599000" />
+      <workItem from="1609231468520" duration="599000" />
+      <workItem from="1609248502402" duration="591000" />
+      <workItem from="1609251514320" duration="597000" />
+      <workItem from="1609252665436" duration="596000" />
+      <workItem from="1609255079520" duration="244000" />
+      <workItem from="1609255736840" duration="4000" />
+      <workItem from="1609417148973" duration="1018000" />
+      <workItem from="1609423483968" duration="6168000" />
+      <workItem from="1609694178972" duration="1325000" />
+      <workItem from="1609773442654" duration="5611000" />
+      <workItem from="1609838115405" duration="2956000" />
+      <workItem from="1609867248788" duration="964000" />
+      <workItem from="1609928229866" duration="2485000" />
+      <workItem from="1610121655719" duration="1303000" />
+      <workItem from="1610304321196" duration="535000" />
+      <workItem from="1610367051227" duration="1000" />
+      <workItem from="1610367335772" duration="1652000" />
+      <workItem from="1610369344394" duration="3160000" />
+      <workItem from="1610376875496" duration="10000" />
+      <workItem from="1610442872816" duration="615000" />
+      <workItem from="1610455226907" duration="1371000" />
+      <workItem from="1610531565189" duration="1785000" />
+      <workItem from="1610550447656" duration="1123000" />
+      <workItem from="1610619608864" duration="1264000" />
+      <workItem from="1610638535286" duration="821000" />
+      <workItem from="1610641274630" duration="727000" />
+      <workItem from="1610642065938" duration="552000" />
+      <workItem from="1610699142915" duration="3892000" />
+      <workItem from="1610719270804" duration="1172000" />
+      <workItem from="1610720475556" duration="738000" />
+      <workItem from="1610721226771" duration="3360000" />
+      <workItem from="1610958879264" duration="594000" />
+      <workItem from="1610970047483" duration="595000" />
+      <workItem from="1610982906297" duration="592000" />
+      <workItem from="1610986081244" duration="166000" />
+      <workItem from="1610986613789" duration="558000" />
+      <workItem from="1610987352062" duration="594000" />
+      <workItem from="1611045081627" duration="180000" />
+      <workItem from="1611155850925" duration="1339000" />
+      <workItem from="1611222454792" duration="274000" />
+      <workItem from="1611231769399" duration="238000" />
+      <workItem from="1611241776872" duration="593000" />
+      <workItem from="1611311316911" duration="2370000" />
+      <workItem from="1611323856076" duration="2294000" />
+      <workItem from="1611328576033" duration="1562000" />
+      <workItem from="1611416643229" duration="1867000" />
+      <workItem from="1611568466406" duration="1191000" />
+      <workItem from="1611652953664" duration="594000" />
+      <workItem from="1611666717794" duration="591000" />
+      <workItem from="1611745835685" duration="588000" />
+      <workItem from="1611910097576" duration="589000" />
+      <workItem from="1612169435436" duration="593000" />
+      <workItem from="1612254418741" duration="594000" />
+      <workItem from="1612345219055" duration="597000" />
+      <workItem from="1612608849892" duration="1508000" />
+      <workItem from="1612714047381" duration="6008000" />
+      <workItem from="1612782415943" duration="15404000" />
+      <workItem from="1612858343544" duration="3105000" />
+      <workItem from="1612945917495" duration="589000" />
+      <workItem from="1612970453666" duration="4246000" />
+      <workItem from="1612976791796" duration="1405000" />
+      <workItem from="1613031734506" duration="1828000" />
+      <workItem from="1613050358604" duration="6622000" />
+      <workItem from="1613059988688" duration="3022000" />
+    </task>
+    <task id="LOCAL-00001" summary="kek">
+      <created>1579702763876</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1579702763876</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="Test_of_retry_util_should_test_ok_database_error_json_structure - 2020.12.23 at 15h 19m 58s.xml">
+      <configuration name="Test of retry util.should test ok database error json structure" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="Test_of_retry_util_should_test_database_error_wrong_json_structure - 2020.12.23 at 15h 25m 53s.xml">
+      <configuration name="Test of retry util.should test database error wrong json structure" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="Test_of_retry_util_should_test_database_error_wrong_json_structure - 2020.12.23 at 15h 26m 10s.xml">
+      <configuration name="Test of retry util.should test database error wrong json structure" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="Test_of_retry_util_should_test_database_error_wrong_json_structure - 2020.12.23 at 15h 26m 20s.xml">
+      <configuration name="Test of retry util.should test database error wrong json structure" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="Test_of_retry_util_should_test_database_error_wrong_json_structure - 2020.12.23 at 15h 26m 33s.xml">
+      <configuration name="Test of retry util.should test database error wrong json structure" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="Test_of_retry_util_should_test_coreError_union_error_json_structure - 2020.12.23 at 15h 27m 30s.xml">
+      <configuration name="Test of retry util.should test coreError union error json structure" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="Test_of_retry_util_should_test_coreError_union_error_json_structure - 2020.12.23 at 15h 28m 25s.xml">
+      <configuration name="Test of retry util.should test coreError union error json structure" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="Test_of_retry_util_should_test_ERROR_coreError_union_error_json_structure - 2020.12.23 at 15h 29m 18s.xml">
+      <configuration name="Test of retry util.should test ERROR coreError union error json structure" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="Test_of_retry_util_should_test_ERROR_coreError_union_error_json_structure - 2020.12.23 at 15h 29m 54s.xml">
+      <configuration name="Test of retry util.should test ERROR coreError union error json structure" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="Test_of_retry_util_should_test_ERROR_coreError_union_error_json_structure - 2020.12.23 at 15h 30m 20s.xml">
+      <configuration name="Test of retry util.should test ERROR coreError union error json structure" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1586104000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7395833" visible="true" weight="0.19635417" />
+      <window_info id="Structure" order="1" sideWeight="0.26041666" side_tool="true" visible="true" weight="0.19635417" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49786195" weight="0.3308026" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.3956916" weight="0.4204793" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.457483" weight="0.0963983" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.487612" weight="0.11921569" />
+      <window_info anchor="bottom" id="TypeScript" order="9" weight="0.3299532" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.6067708" side_tool="true" weight="0.3898305" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.39322916" visible="true" weight="0.3898305" />
+      <window_info anchor="bottom" id="GraphQL" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Cargo" order="3" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4984375" visible="true" weight="0.2921875" />
+      <window_info id="Structure" order="1" sideWeight="0.5015625" side_tool="true" weight="0.14654718" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49786195" weight="0.3308026" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4019449" weight="0.30100334" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.46064702" weight="0.28308207" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.487612" weight="0.11921569" />
+      <window_info anchor="bottom" id="TypeScript" order="9" weight="0.3299532" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5416216" side_tool="true" weight="0.07950728" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.45837837" weight="0.07950728" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="kek" />
+    <option name="LAST_COMMIT_MESSAGE" value="kek" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/sap/odstavky.ts</url>
+          <line>25</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/download/service/DownloadStatusService.ts</url>
+          <line>93</line>
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/download/service/DownloadService.ts</url>
+          <line>44</line>
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/common/withs/WithVytvoreno.ts</url>
+          <line>16</line>
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/common/withs/WithDownloadStatus.ts</url>
+          <line>17</line>
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/utils/fp/imp/cond/cond.ts</url>
+          <line>17</line>
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/utils/fp/imp/railwayA/__tests__/maybePipeA.test.ts</url>
+          <line>106</line>
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/utils/fisherman/imp/either/__tests__/either.test.ts</url>
+          <line>38</line>
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/modules/course/courseValidations.ts</url>
+          <line>33</line>
+          <option name="timeStamp" value="72" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/__tests__/errors.test.ts</url>
+          <line>28</line>
+          <option name="timeStamp" value="78" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/__tests__/errors.test.ts</url>
+          <line>14</line>
+          <option name="timeStamp" value="82" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="ChromiumRemoteDebugType">
+        <watch expression="authenticationRequestBody" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/server/database.ts" />
+    <entry file="file://$PROJECT_DIR$/node_modules/StgGraphql/graphql.schema.graphql" />
+    <entry file="file://$PROJECT_DIR$/src/server/socketCore.ts" />
+    <entry file="file://$PROJECT_DIR$/node_modules/fp-ts/lib/function.d.ts" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/io-ts/lib/PathReporter.d.ts" />
+    <entry file="file://$PROJECT_DIR$/src/modules/test/mongInternal.ts" />
+    <entry file="file://$PROJECT_DIR$/node_modules/newtype-ts/lib/index.d.ts" />
+    <entry file="file://$PROJECT_DIR$/node_modules/monocle-ts/lib/index.d.ts" />
+    <entry file="file://$PROJECT_DIR$/dist/server/database.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="136" selection-start-line="10" selection-start-column="136" selection-end-line="10" selection-end-column="136" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tslint.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/stgTypes/game.ts" />
+    <entry file="file://$PROJECT_DIR$/src/modules/api/types.ts" />
+    <entry file="file://$PROJECT_DIR$/node_modules/fp-ts/lib/TaskEither.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="76" column="21" selection-start-line="76" selection-start-column="21" selection-end-line="76" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/connection.ts" />
+    <entry file="file://$PROJECT_DIR$/src/routes/message.ts" />
+    <entry file="file://$PROJECT_DIR$/src/routes/index.ts" />
+    <entry file="file://$PROJECT_DIR$/src/modules/test/core/testService.ts" />
+    <entry file="file://$PROJECT_DIR$/src/modules/test/shell/test.graphql.resolvers.ts" />
+    <entry file="file://$PROJECT_DIR$/src/modules/types/common.ts" />
+    <entry file="file://$PROJECT_DIR$/src/modules/types/issue.ts" />
+    <entry file="file://$PROJECT_DIR$/src/modules/xlsx.ts" />
+    <entry file="file://$PROJECT_DIR$/src/modules/parser.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="65" column="25" selection-end-line="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/fp-ts/lib/Either.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="837" column="24" selection-start-line="837" selection-start-column="24" selection-end-line="837" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/test.test.ts" />
+    <entry file="file://$PROJECT_DIR$/src/__tests__/utilts.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/__tests__/errors.test.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="7" column="24" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/fp-ts/lib/Array.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2865">
+          <caret line="214" column="2" selection-start-line="214" selection-start-column="2" selection-end-line="214" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/hyper-ts/lib/express.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2025">
+          <caret line="137" column="24" selection-start-line="137" selection-start-column="24" selection-end-line="137" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" lean-forward="true" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/fp-ts/lib/NonEmptyArray.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="7" column="15" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.prettierignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="930">
+          <caret line="62" column="5" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/Server.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@types/bson/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5340">
+          <caret line="362" column="4" selection-start-line="362" selection-start-column="4" selection-end-line="362" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/io-ts/lib/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1830">
+          <caret line="123" column="2" selection-start-line="123" selection-start-column="2" selection-end-line="123" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/mongoInternal.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/typescript/lib/lib.dom.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292815">
+          <caret line="19534" column="14" selection-start-line="19534" selection-start-column="14" selection-end-line="19534" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/api.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="50" column="13" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nodemon.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/hyper-ts/lib/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5130">
+          <caret line="352" column="24" selection-start-line="352" selection-start-column="24" selection-end-line="352" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/errors.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1035">
+          <caret line="69" column="13" selection-start-line="69" selection-start-column="13" selection-end-line="69" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/mongoExternal.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="36" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/api/common.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@types/mongodb/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="1500" column="4" selection-start-line="1500" selection-start-column="4" selection-end-line="1500" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/mongo.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="10" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/api/routes.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="23" column="33" lean-forward="true" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/issue/issue.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="25" column="6" lean-forward="true" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/issue/model.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="96" column="61" selection-start-line="96" selection-start-column="61" selection-end-line="96" selection-end-column="61" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

@@ -1,0 +1,20 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.router = void 0;
+const express = require("express");
+const express_1 = require("hyper-ts/lib/express");
+const model_1 = require("../issue/model");
+const pipeable_1 = require("fp-ts/pipeable");
+const H = require("hyper-ts");
+const errors_1 = require("../errors");
+const PathReporter_1 = require("io-ts/PathReporter");
+const common_1 = require("./common");
+const mongodb_1 = require("mongodb");
+const issue_1 = require("../issue/issue");
+const router = express.Router();
+exports.router = router;
+const createIssueRequestHandler = pipeable_1.pipe(H.decodeBody(model_1.createIssueInput.decode), H.mapLeft((e) => errors_1.createBackendError(PathReporter_1.failure(e).join('\n'), errors_1.ErrorTag.api)(e)), H.ichain((decoded) => H.fromTaskEither(issue_1.createIssue(decoded))), H.ichain(common_1.sendBodyAndClose('createIssueHandler JSON error')), H.orElse(common_1.withErrorCode(H.Status.BadRequest)));
+router.route('/createIssue').post(express_1.toRequestHandler(createIssueRequestHandler));
+const getIssueByIdHandler = pipeable_1.pipe(H.decodeBody(model_1.getIssueInput.decode), (e) => e, H.map((decoded) => new mongodb_1.ObjectID(decoded.id)), H.mapLeft((e) => errors_1.createBackendError(PathReporter_1.failure(e).join('\n'), errors_1.ErrorTag.api)(e)), H.ichain((decoded) => H.fromTaskEither(issue_1.getIssueById(model_1.isoIssueId.wrap(decoded)))), H.ichain(common_1.sendBodyAndClose('getIssueByIdHandler JSON error')), H.orElse(common_1.withErrorCode(H.Status.BadRequest)));
+router.route('/getIssue').post(express_1.toRequestHandler(getIssueByIdHandler));
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicm91dGVzLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vLi4vc3JjL21vZHVsZXMvYXBpL3JvdXRlcy50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFBQSxtQ0FBbUM7QUFDbkMsa0RBQXNEO0FBQ3RELDBDQUEyRTtBQUMzRSw2Q0FBb0M7QUFDcEMsOEJBQThCO0FBQzlCLHNDQUF1RDtBQUN2RCxxREFBMkM7QUFDM0MscUNBQXlEO0FBQ3pELHFDQUFpQztBQUNqQywwQ0FBeUQ7QUFFekQsTUFBTSxNQUFNLEdBQUcsT0FBTyxDQUFDLE1BQU0sRUFBRSxDQUFDO0FBd0J4Qix3QkFBTTtBQXRCZCxNQUFNLHlCQUF5QixHQUFHLGVBQUksQ0FDbEMsQ0FBQyxDQUFDLFVBQVUsQ0FBQyx3QkFBZ0IsQ0FBQyxNQUFNLENBQUMsRUFDckMsQ0FBQyxDQUFDLE9BQU8sQ0FBQyxDQUFDLENBQUMsRUFBRSxFQUFFLENBQUMsMkJBQWtCLENBQUMsc0JBQU8sQ0FBQyxDQUFDLENBQUMsQ0FBQyxJQUFJLENBQUMsSUFBSSxDQUFDLEVBQUUsaUJBQVEsQ0FBQyxHQUFHLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxFQUM1RSxDQUFDLENBQUMsTUFBTSxDQUFDLENBQUMsT0FBTyxFQUFFLEVBQUUsQ0FBQyxDQUFDLENBQUMsY0FBYyxDQUFDLG1CQUFXLENBQUMsT0FBTyxDQUFDLENBQUMsQ0FBQyxFQUM3RCxDQUFDLENBQUMsTUFBTSxDQUFDLHlCQUFnQixDQUFDLCtCQUErQixDQUFDLENBQUMsRUFDM0QsQ0FBQyxDQUFDLE1BQU0sQ0FBQyxzQkFBYSxDQUFDLENBQUMsQ0FBQyxNQUFNLENBQUMsVUFBVSxDQUFDLENBQUMsQ0FDL0MsQ0FBQztBQUVGLE1BQU0sQ0FBQyxLQUFLLENBQUMsY0FBYyxDQUFDLENBQUMsSUFBSSxDQUFDLDBCQUFnQixDQUFDLHlCQUF5QixDQUFDLENBQUMsQ0FBQztBQUUvRSxNQUFNLG1CQUFtQixHQUFHLGVBQUksQ0FDNUIsQ0FBQyxDQUFDLFVBQVUsQ0FBQyxxQkFBYSxDQUFDLE1BQU0sQ0FBQyxFQUNsQyxDQUFDLENBQUMsRUFBRSxFQUFFLENBQUMsQ0FBQyxFQUNSLENBQUMsQ0FBQyxHQUFHLENBQUMsQ0FBQyxPQUFPLEVBQUUsRUFBRSxDQUFDLElBQUksa0JBQVEsQ0FBQyxPQUFPLENBQUMsRUFBRSxDQUFDLENBQUMsRUFDNUMsQ0FBQyxDQUFDLE9BQU8sQ0FBQyxDQUFDLENBQUMsRUFBRSxFQUFFLENBQUMsMkJBQWtCLENBQUMsc0JBQU8sQ0FBQyxDQUFDLENBQUMsQ0FBQyxJQUFJLENBQUMsSUFBSSxDQUFDLEVBQUUsaUJBQVEsQ0FBQyxHQUFHLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxFQUM1RSxDQUFDLENBQUMsTUFBTSxDQUFDLENBQUMsT0FBTyxFQUFFLEVBQUUsQ0FBQyxDQUFDLENBQUMsY0FBYyxDQUFDLG9CQUFZLENBQUMsa0JBQVUsQ0FBQyxJQUFJLENBQUMsT0FBTyxDQUFDLENBQUMsQ0FBQyxDQUFDLEVBQy9FLENBQUMsQ0FBQyxNQUFNLENBQUMseUJBQWdCLENBQUMsZ0NBQWdDLENBQUMsQ0FBQyxFQUM1RCxDQUFDLENBQUMsTUFBTSxDQUFDLHNCQUFhLENBQUMsQ0FBQyxDQUFDLE1BQU0sQ0FBQyxVQUFVLENBQUMsQ0FBQyxDQUMvQyxDQUFDO0FBRUYsTUFBTSxDQUFDLEtBQUssQ0FBQyxXQUFXLENBQUMsQ0FBQyxJQUFJLENBQUMsMEJBQWdCLENBQUMsbUJBQW1CLENBQUMsQ0FBQyxDQUFDIn0=
