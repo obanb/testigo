@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b33dbe2-04e6-4cd2-b5c0-dc686f8e3f44" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/modules/account/account.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/account/models.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../nextclient/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../nextclient/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../nextclient/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../nextclient/package.json" afterDir="false" />
@@ -14,8 +16,16 @@
       <change beforePath="$PROJECT_DIR$/../nextclient/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/../nextclient/tsconfig.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../nextclient/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../nextclient/yarn.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/modules/api/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/modules/api/common.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/modules/api/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/modules/api/routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/modules/issue/issue.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/modules/issue/issue.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/modules/issue/model.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/modules/issue/model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/api/common.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/api/common.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/api/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/api/routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/issue/issue.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/issue/issue.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/issue/model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/issue/model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../stgTypes/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../stgTypes/.idea/workspace.xml" afterDir="false" />
     </list>
     <list id="7ae2f557-8a8e-4ed4-b67e-d61d24f4b6c5" name="rozpracovano" comment="rozpracovano">
@@ -39,51 +49,57 @@
     <session id="-1777669285">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
-          <entry key="project.open.time.0" value="1" />
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.0" value="2" />
+          <entry key="project.open.time.108" value="1" />
           <entry key="project.open.time.21" value="2" />
           <entry key="project.open.time.29" value="1" />
           <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="2" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.opened" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
         <counts>
-          <entry key="PrettierLanguageServiceImpl" value="6" />
-          <entry key="TypeScriptServerServiceImpl" value="8" />
+          <entry key="PrettierLanguageServiceImpl" value="7" />
+          <entry key="TypeScriptServerServiceImpl" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="env" value="1" />
           <entry key="gitignore" value="1" />
-          <entry key="json" value="2" />
+          <entry key="js" value="1" />
+          <entry key="json" value="3" />
           <entry key="prettierignore" value="1" />
-          <entry key="ts" value="66" />
+          <entry key="ts" value="77" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key=".env file" value="1" />
-          <entry key="JSON" value="2" />
+          <entry key="JSON" value="3" />
+          <entry key="JavaScript" value="1" />
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="TypeScript" value="66" />
+          <entry key="TypeScript" value="77" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="env" value="33" />
           <entry key="gitignore" value="8" />
-          <entry key="ts" value="4196" />
+          <entry key="json" value="1" />
+          <entry key="ts" value="5283" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key=".env file" value="33" />
+          <entry key="JSON" value="1" />
           <entry key="PLAIN_TEXT" value="8" />
-          <entry key="TypeScript" value="4196" />
+          <entry key="TypeScript" value="5283" />
         </counts>
       </usages-collector>
     </session>
@@ -93,11 +109,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/modules/issue/issue.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-30">
-              <caret line="25" column="6" lean-forward="true" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
-              <folding>
-                <element signature="e#0#36#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-195">
+              <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -105,8 +118,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/modules/issue/model.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            <state relative-caret-position="381">
+              <caret line="61" selection-start-line="61" selection-end-line="67" />
               <folding>
                 <element signature="e#0#27#0" expanded="true" />
               </folding>
@@ -115,54 +128,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nodemon.json">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/hyper-ts/lib/index.d.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="367" column="24" selection-start-line="367" selection-start-column="24" selection-end-line="367" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/@types/mongodb/index.d.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="1500" column="4" selection-start-line="1500" selection-start-column="4" selection-end-line="1500" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/modules/errors.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1035">
-              <caret line="69" column="13" selection-start-line="69" selection-start-column="13" selection-end-line="69" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/modules/mongoExternal.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" column="36" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
-              <folding>
-                <element signature="e#0#60#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/modules/api/routes.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="28" column="6" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
+            <state relative-caret-position="291">
+              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -170,14 +139,46 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/modules/mongo.ts">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/modules/account/account.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+            <state relative-caret-position="126">
+              <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
               <folding>
-                <element signature="e#0#49#0" expanded="true" />
+                <element signature="e#0#27#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/modules/account/models.ts">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/hyper-ts/lib/express.d.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="137" column="94" lean-forward="true" selection-start-line="137" selection-start-column="94" selection-end-line="137" selection-end-column="94" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/@types/express/index.d.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="318">
+              <caret line="108" column="14" selection-start-line="108" selection-start-column="14" selection-end-line="108" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/hyper-ts/lib/index.d.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="375" column="24" selection-start-line="375" selection-start-column="24" selection-end-line="375" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -185,11 +186,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/modules/api/common.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+            <state relative-caret-position="300">
+              <caret line="20" column="24" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="24" />
               <folding>
                 <element signature="e#0#36#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/modules/api.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="561">
+              <caret line="50" column="13" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -205,9 +215,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>generateAuthenticationPayload</find>
-      <find>DeactivateAccountsInput</find>
-      <find>codegen</find>
       <find>ActivateAccountsInput</find>
       <find>Account</find>
       <find>verify</find>
@@ -235,6 +242,9 @@
       <find>objectIdstring</find>
       <find>WithId</find>
       <find>wrap</find>
+      <find>console.l</find>
+      <find>cursor</find>
+      <find>upGr</find>
     </findStrings>
     <replaceStrings>
       <replace>CondInterface</replace>
@@ -280,7 +290,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/modules/account/types/accountServiceTypes.ts" />
         <option value="$PROJECT_DIR$/src/modules/post/core/postService.ts" />
         <option value="$PROJECT_DIR$/src/modules/account/types/accountCommonTypes.ts" />
         <option value="$PROJECT_DIR$/src/modules/account/shell/account.rest.resolvers.ts" />
@@ -313,7 +322,6 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/server/connection.ts" />
         <option value="$PROJECT_DIR$/dist/server/database.js" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/modules/api.ts" />
         <option value="$PROJECT_DIR$/src/modules/parser.ts" />
         <option value="$PROJECT_DIR$/src/modules/types/common.ts" />
@@ -324,13 +332,15 @@
         <option value="$PROJECT_DIR$/src/server/Server.ts" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/modules/mongo.ts" />
-        <option value="$PROJECT_DIR$/src/modules/api/common.ts" />
         <option value="$PROJECT_DIR$/src/modules/issue.ts" />
         <option value="$PROJECT_DIR$/src/modules/issue/types.ts" />
-        <option value="$PROJECT_DIR$/src/modules/issue/issue.ts" />
-        <option value="$PROJECT_DIR$/src/modules/issue/model.ts" />
+        <option value="$PROJECT_DIR$/src/modules/mongo.ts" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/src/modules/api/common.ts" />
         <option value="$PROJECT_DIR$/src/modules/api/routes.ts" />
+        <option value="$PROJECT_DIR$/src/modules/issue/model.ts" />
+        <option value="$PROJECT_DIR$/src/modules/issue/issue.ts" />
+        <option value="$PROJECT_DIR$/src/modules/account/account.ts" />
       </list>
     </option>
   </component>
@@ -349,10 +359,10 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
-    <option name="y" value="2" />
-    <option name="width" value="1932" />
-    <option name="height" value="1045" />
+    <option name="x" value="57" />
+    <option name="y" value="123" />
+    <option name="width" value="1662" />
+    <option name="height" value="915" />
   </component>
   <component name="ProjectId" id="1o6Z9PYY3j9st2MDiTCwqG6R0r3" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -361,6 +371,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -384,14 +395,14 @@
               <item name="stgBackend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="stgBackend" type="b2602c69:ProjectViewProjectNode" />
               <item name="stgBackend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="stgBackend" type="b2602c69:ProjectViewProjectNode" />
@@ -404,7 +415,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="ProjectViewState">
@@ -418,7 +428,7 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/obanb/Desktop/up-graphql-origin/up-backend/src/modules/account/core/accountService.ts&#10;resolvers&#9;FILE&#9;file://C:/Users/obanb/Desktop/up-graphql-origin/up-backend/src/modules/account/shell/account.graphql.resolvers.ts&#10;shell&#9;FILE&#9;file://C:/Users/obanb/Desktop/up-graphql-origin/up-backend/dist/modules/account/shell&#10;Acco&#9;FILE&#9;file://C:/Users/obanb/Desktop/up-graphql-origin/up-backend/src/modules/account/core/accountService.ts&#10;Types&#9;FILE&#9;file://C:/Users/obanb/Desktop/up-graphql-origin/up-backend/src/modules/account/types/accountCommonTypes.ts&#10;Rout&#9;FILE&#9;file://C:/Users/obanb/Desktop/up-graphql-origin/up-backend/src/modules/account/shell/accountRouter.ts&#10;server.t&#9;FILE&#9;file://C:/Users/obanb/Desktop/up-graphql-origin/up-backend/src/server/Server.ts" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="full.screen.before.presentation.mode" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../apollo13-database" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="C:\Users\obanb\Desktop\apollo13-odstavky-saver\node_modules\tslint" />
@@ -930,7 +940,10 @@
       <workItem from="1612976791796" duration="1405000" />
       <workItem from="1613031734506" duration="1828000" />
       <workItem from="1613050358604" duration="6622000" />
-      <workItem from="1613059988688" duration="4131000" />
+      <workItem from="1613059988688" duration="5078000" />
+      <workItem from="1613119417105" duration="2052000" />
+      <workItem from="1613128053641" duration="576000" />
+      <workItem from="1613128657062" duration="13875000" />
     </task>
     <task id="LOCAL-00001" summary="kek">
       <created>1579702763876</created>
@@ -975,13 +988,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1587213000" />
+    <option name="totallyTimeSpent" value="1604663000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7395833" visible="true" weight="0.19635417" />
-      <window_info id="Structure" order="1" sideWeight="0.26041666" side_tool="true" visible="true" weight="0.19635417" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.734375" visible="true" weight="0.19635417" />
+      <window_info id="Structure" order="1" sideWeight="0.265625" side_tool="true" visible="true" weight="0.19635417" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -994,8 +1007,8 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.487612" weight="0.11921569" />
       <window_info anchor="bottom" id="TypeScript" order="9" weight="0.3299532" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.6067708" side_tool="true" weight="0.3898305" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.39322916" visible="true" weight="0.3898305" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.6088542" side_tool="true" visible="true" weight="0.3898305" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.39114583" visible="true" weight="0.3898305" />
       <window_info anchor="bottom" id="GraphQL" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1129,17 +1142,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/server/database.ts" />
-    <entry file="file://$PROJECT_DIR$/node_modules/StgGraphql/graphql.schema.graphql" />
-    <entry file="file://$PROJECT_DIR$/src/server/socketCore.ts" />
-    <entry file="file://$PROJECT_DIR$/node_modules/fp-ts/lib/function.d.ts" />
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/io-ts/lib/PathReporter.d.ts" />
     <entry file="file://$PROJECT_DIR$/src/modules/test/mongInternal.ts" />
     <entry file="file://$PROJECT_DIR$/node_modules/newtype-ts/lib/index.d.ts" />
@@ -1171,13 +1173,6 @@
     <entry file="file://$PROJECT_DIR$/src/modules/types/common.ts" />
     <entry file="file://$PROJECT_DIR$/src/modules/types/issue.ts" />
     <entry file="file://$PROJECT_DIR$/src/modules/xlsx.ts" />
-    <entry file="file://$PROJECT_DIR$/src/modules/parser.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="65" column="25" selection-end-line="105" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/fp-ts/lib/Either.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
@@ -1207,13 +1202,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/hyper-ts/lib/express.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2025">
-          <caret line="137" column="24" selection-start-line="137" selection-start-column="24" selection-end-line="137" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -1237,13 +1225,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.prettierignore">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="930">
-          <caret line="62" column="5" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="19" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
@@ -1287,15 +1268,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/api.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="50" column="13" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/nodemon.json">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@types/mongodb/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21915">
+          <caret line="1500" column="4" selection-start-line="1500" selection-start-column="4" selection-end-line="1500" selection-end-column="4" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/modules/errors.ts">
       <provider selected="true" editor-type-id="text-editor">
@@ -1314,66 +1295,118 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@types/mongodb/index.d.ts">
+    <entry file="file://$PROJECT_DIR$/node_modules/@types/express-serve-static-core/index.d.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="1500" column="4" selection-start-line="1500" selection-start-column="4" selection-end-line="1500" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/issue/issue.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-30">
-          <caret line="25" column="6" lean-forward="true" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/hyper-ts/lib/index.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="367" column="24" selection-start-line="367" selection-start-column="24" selection-end-line="367" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/issue/model.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/api/common.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="183">
+          <caret line="123" column="4" selection-start-line="123" selection-start-column="4" selection-end-line="123" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/modules/mongo.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        <state relative-caret-position="330">
+          <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="24" />
           <folding>
             <element signature="e#0#49#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/parser.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="50" column="19" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/modules/group/shell/group.graphql.resolvers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="48" column="23" selection-start-line="48" selection-start-column="23" selection-end-line="48" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@types/express/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="108" column="14" selection-start-line="108" selection-start-column="14" selection-end-line="108" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/hyper-ts/lib/express.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="137" column="94" lean-forward="true" selection-start-line="137" selection-start-column="94" selection-end-line="137" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/hyper-ts/lib/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="375" column="24" selection-start-line="375" selection-start-column="24" selection-end-line="375" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/api.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="50" column="13" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/api/common.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="24" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/modules/api/routes.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="28" column="6" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
+        <state relative-caret-position="291">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/account/models.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/issue/issue.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-195">
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/issue/model.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="61" selection-start-line="61" selection-end-line="67" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/account/account.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
           </folding>
         </state>
       </provider>

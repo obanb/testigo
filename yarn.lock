@@ -2362,10 +2362,10 @@ husky@1.2.1:
     run-node "^1.0.0"
     slash "^2.0.0"
 
-hyper-ts@^0.6.0:
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/hyper-ts/-/hyper-ts-0.6.0.tgz#35bcee114476d742988130585ef4e1d114a46b75"
-  integrity sha512-LjYHlmE6/Z++MVLX36Z2Eear3E9C6l6e4QPbWJqTWMzoDKNtv+g/D59sOn7r9kzi3ssAkuu9GOfrChv48NEN5g==
+hyper-ts@^0.6.1:
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/hyper-ts/-/hyper-ts-0.6.1.tgz#a219ec6a170b5d6c7d665561c0a5b1e0b50c758b"
+  integrity sha512-rhtf4s/VdDQSxKRvgFm4AVMPyuyOdAyeoZ641r3+fHnHyrRk9oSwHzVI8KjR1FFN9fUvSZQdGzgA7/p8eV+I6Q==
 
 iconv-lite@0.4.24:
   version "0.4.24"

@@ -25,8 +25,8 @@ export const createIssue = (input: CreateIssueInput): TE.TaskEither<BackendError
         ),
     );
 
-export const getIssueById = (id: IssueId): TE.TaskEither<BackendError, IssueRaw> => {
-    return pipe(
+export const getIssueById = (id: IssueId): TE.TaskEither<BackendError, IssueRaw> =>
+    pipe(
         getIssueCol(),
         TE.chain((col) =>
             TE.tryCatch(
@@ -35,7 +35,12 @@ export const getIssueById = (id: IssueId): TE.TaskEither<BackendError, IssueRaw>
             ),
         ),
     );
-};
+
+export const getIssues = (): TE.TaskEither<BackendError, IssueRaw[]> =>
+    pipe(
+        getIssueCol(),
+        TE.chain((col) => TE.tryCatch(() => col.find({}).toArray(), createBackendError(`getIssues`, ErrorTag.database))),
+    );
 
 export const getIssueCol = () => pipe(internalMongoClient, E.chain(getInternalDatabase()), TE.fromEither, TE.chain(getCollection<IssueRaw>('issues')));
 

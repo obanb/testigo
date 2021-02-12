@@ -1,5 +1,5 @@
 import * as t from 'io-ts';
-import {ObjectId, objectId, objectIdstring} from '../mongo';
+import {ObjectId, objectIdstring} from '../mongo';
 import {iso, Newtype} from 'newtype-ts';
 import {ObjectID} from 'mongodb';
 
@@ -9,7 +9,7 @@ import {ObjectID} from 'mongodb';
  */
 
 export const issueId = new t.Type<IssueId, IssueId, any>(
-    'objectId',
+    'issueId',
     (input: any): input is IssueId => ObjectID.isValid(input),
     (input, context) => (ObjectID.isValid(input) ? t.success(input) : t.failure(input, context)),
     t.identity,
