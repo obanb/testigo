@@ -9,6 +9,7 @@ import {emptyObject, sendBodyAndClose, withErrorCode} from './common';
 import {ObjectID} from 'mongodb';
 import {createIssue, getIssueById, getIssues} from '../issue/issue';
 import {objectIdstring} from '../mongo';
+import {checkAccountExists, createAccount, createAccountInput} from '../account/models';
 
 const router = express.Router();
 
@@ -37,10 +38,20 @@ const getIssuesHandler = pipe(
     H.orElse(withErrorCode(H.Status.BadRequest)),
 );
 
+const createAccountRequestHandler = pipe(
+    H.decodeBody(createAccountInput.decode),
+    H.mapLeft((e) => createBackendError(failure(e).join('\n'), ErrorTag.api)(e)),
+    H.ichain((decoded) => H.fromTaskEither(checkAccountExists(decoded))),
+    H.ichain(sendBodyAndClose('createAccountRequestHandler JSON error')),
+    H.orElse(withErrorCode(H.Status.BadRequest)),
+);
+
 router.route('/createIssue').post(toRequestHandler(createIssueRequestHandler));
 
-router.route('/getIssues/id').get(toRequestHandler(getIssueByIdHandler));
+router.route('/getIssue/:id').get(toRequestHandler(getIssueByIdHandler));
 
 router.route('/getIssues').get(toRequestHandler(getIssuesHandler));
+
+router.route('/createAccount').post(toRequestHandler(createAccountRequestHandler));
 
 export {router};
